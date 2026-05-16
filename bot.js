@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require('telegraf');
 const axios = require('axios');
 const http = require('http');
 
-const BOT_TOKEN = '8849953421:AAHjpEqAEzai1kqRZA347raOW8PSFTnzVSQ';
+const BOT_TOKEN = process.env.BOT_TOKEN;
 const bot = new Telegraf(BOT_TOKEN);
 
 const categories = {
